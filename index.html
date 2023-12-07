@@ -1,1 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee Shop</title>
+  <style>
+    /* Basic styling */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
 
+    /* Navbar styles */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #333;
+      padding: 10px 20px;
+    }
+
+    .navbar-brand {
+      font-size: 24px;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .navbar-links {
+      display: none;
+    }
+
+    .navbar-links ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    .navbar-links li {
+      margin-left: 20px;
+    }
+
+    .navbar-links a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    /* Hamburger menu */
+    .hamburger {
+      display: block;
+      cursor: pointer;
+      color: #fff;
+      font-size: 24px;
+    }
+
+    /* Hero section */
+    .hero {
+      background-color: #f8f8f8;
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    /* Gallery */
+    /* ... */
+
+    /* Cards section */
+    /* ... */
+
+    /* Features/testimonials */
+    /* ... */
+
+    /* Footer */
+    .footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    /* Media queries for responsiveness */
+    @media (max-width: 768px) {
+      .navbar-links {
+        display: none;
+      }
+
+      .navbar-links.active {
+        display: block;
+      }
+
+      .navbar-links ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .navbar-links li {
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <a href="#" class="navbar-brand">Your Coffee Shop</a>
+    <div class="hamburger">&#9776;</div>
+    <div class="navbar-links">
+      <ul>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#cards">Menu</a></li>
+        <li><a href="#features">Testimonials</a></li>
+        <!-- Add more navigation links -->
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Welcome to Your Coffee Shop</h1>
+    <p>Delicious coffee served with love.</p>
+    <!-- Add Call-to-action button -->
+  </section>
+
+  <!-- Gallery Section -->
+  <!-- ... -->
+
+  <!-- Cards Section -->
+  <!-- ... -->
+
+  <!-- Features/Testimonials Section -->
+  <!-- ... -->
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>Contact us: example@email.com | 123-456-7890</p>
+    <!-- Social media icon links -->
+  </footer>
+
+  <!-- Script for toggling the hamburger menu -->
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navbarLinks = document.querySelector('.navbar-links');
+
+    hamburger.addEventListener('click', () => {
+      navbarLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
